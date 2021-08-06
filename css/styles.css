@@ -1,0 +1,117 @@
+:root {
+  --primary-text-color: #212121;
+  --secondary-text-color: #757575;
+  --accent-color: #2196f3;
+  --second-accent-color: #ffffff;
+
+  --primery-background-color: #e5e5e5;
+  --secondary-background-color: #ececec;
+  --accent-background-color: #2f303a;
+  --grey-background-color: #f5f4fa;
+}
+
+/* primary-text-color  #212121*/
+/* secondary text color  #757575*/
+/* second-accent color #FFFFFF*/
+/* accent  #2196f3 */
+/* footer Adress: Link and Address Color rgba(255, 255, 255, 0,6) */
+
+/* top line. Secondary background-color: #ECECEC */
+/* section 1. &Footer. Accent background-color: #2F303A; */
+/* section 2, 3. Main background-color: #E5E5E5 */
+/* section 4. Secondary background-color: #F5F4FA */
+
+body {
+  color: var(--primary-text-color);
+  background-color: var(--primery-background-color);
+}
+
+ul {
+  list-style: none;
+}
+
+/* top line */
+/* top line  background-color: #ffffff */
+.logo {
+  color: #000000;
+}
+.logo-color {
+  color: var(--accent-color);
+}
+.logo:hover,
+.logo-color:hover {
+  color: #000000;
+}
+
+/* top line nav */
+.site-nav .link {
+  color: var(--primary-text-color);
+}
+/* ??? */
+.site-nav:hover,
+.site-nav:focus {
+  color: #000000;
+}
+/* ??? */
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: #000000;
+}
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+.site-nav .link.current:hover,
+.site-nav .link.current:focus {
+  color: var(--accent-color);
+}
+
+.contacts .contacts-link {
+  color: var(--accent-color);
+}
+.contacts .contacts-link:hover,
+.contacts .contacts-link:focus {
+  color: var(--accent-color);
+}
+.contacts .contacts-tel {
+  color: var(--secondary-text-color);
+}
+
+.contacts-link:hover,
+.contacts-link:focus {
+  color: var(--accent-color);
+}
+
+/* Стили для index.html */
+/* section one. hero */
+.section-title {
+  color: var(--primary-text-color);
+}
+/* button */
+.button {
+  color: var(--second-accent-color);
+  background-color: var(--accent-color);
+}
+.button:hover {
+  background-color: #188ce8;
+}
+
+/* features */
+.feature-list .title {
+  color: var(--primary-text-color);
+}
+.feature-list .paragraph {
+  color: var(--secondary-text-color);
+}
+
+/* section four. our team */
+.team-list .title {
+  color: var(--primary-text-color);
+}
+.team-list .paragraph {
+  color: var(--secondary-text-color);
+}
+
+/* footer */
+
+/* Стили для portfolio.html */
