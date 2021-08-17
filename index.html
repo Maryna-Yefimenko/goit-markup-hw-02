@@ -12,25 +12,24 @@
     <link rel="stylesheet" href="./css/styles.css">
     <!-- Шрифты -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Roboto:wght@400;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <!--body and header section-->
 <body>
-    <header>
+    <header style="height: 80px; display: flex;">
         <!-- top line -->
         <div class="container container-flex">
             <nav style="display: flex; align-items: center;">
                 <a href="./index.html" class="logo"><span class="logo-color">Web</span>Studio</a>
-                <ul class="site-nav-list" style="display: flex; ">
-                    <li><a href="./index.html" class="link-current">Студия</a></li>
-                    <li><a href="./portfolio.html" class="link">Портфолио</a></li>
-                    <li><a href="" class="link">Контакты</a></li>
+                <ul class="site-nav-list" style="display: flex; margin-left: auto;">
+                    <li class="site-nav-top"><a href="./index.html" class="site-nav-link link-current">Студия</a></li>
+                    <li class="site-nav-top"><a href="./portfolio.html" class="site-nav-link link">Портфолио</a></li>
+                    <li class="site-nav-top"><a href="" class="site-nav-link link">Контакты</a></li>
                 </ul>
             
                 <ul class="contacts" style="display: flex; margin-left: 331px;">
-                    <li><a href="mailto:info@devstudio.com" class="contacts-link">info@devstudio.com</a></li>
-                    <li><a href="tel:+380961111111" class="contacts-tel">+38 096 111 11 11</a></li>
+                    <li class="site-nav-contacts"><a href="mailto:info@devstudio.com" class="contacts-link">info@devstudio.com</a></li>
+                    <li class="site-nav-contacts"><a href="tel:+380961111111" class="contacts-tel">+38 096 111 11 11</a></li>
                 </ul>
             </nav>
         </div> 
@@ -40,28 +39,31 @@
     <main>
         <!--section one. Hero. effective decissions-->
         <section class="hero">
-            <div class="container"><h1 class="hero-title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА</h1>
-            <button type="button" class="button">Заказать услугу</button>
+            <div class="container container-hero" style="text-align: center;">
+                <span class="container-hero-title" style="display: inline-block;" style="text-align: center;"><h1 class="hero-title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА</h1></span>
+            <button type="button" class="button-service" style="text-align: center;">
+                <span style="display: inline-block;" style="text-align: center;">Заказать услугу</span>
+            </button>
             </div>
         </section>
         <!--section two. list of features-->
         <section class="section">
             <div class="container">
                 <h2 class="section-title"></h2>
-                <ul class="feature-list" style="display: flex;">
-                    <li>
+                <ul class="feature-list" style="display: flex; justify-content: center;">
+                    <li class="feature-nav">
                         <h3 class="title">ВНИМАНИЕ К ДЕТАЛЯМ</h3>
-                        <p class="paragraph">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+                        <p class="paragraph">Идейные соображения, а такжe начало повседневной работы по формированию позиции.</p>
                     </li>
-                    <li>
+                    <li class="feature-nav">
                         <h3 class="title">ПУНКТУАЛЬНОСТЬ</h3>
                         <p class="paragraph">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
                     </li>
-                    <li>
+                    <li class="feature-nav"> 
                         <h3 class="title">ПЛАНИРОВАНИЕ</h3>
                         <p class="paragraph">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
                     </li>
-                    <li>
+                    <li class="feature-nav">
                         <h3 class="title">СОВРЕМЕННЫЕ ТЕХНОЛОГИИ</h3>
                         <p class="paragraph">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
                     </li>
@@ -73,13 +75,13 @@
             <div class="container">
                 <h2 class="section-title">Чем мы занимаемся</h2>
                 <ul class="imagine-position" style="display: flex;">
-                    <li>
+                    <li class="imagine-nav">
                         <img src="./img/work-1.jpg" alt="Компьютерные технологии" width="370" height="294" />
                     </li>
-                    <li>
+                    <li class="imagine-nav">
                         <img src="./img/work-2.jpg" alt="Мобильные технологии" width="370" height="294" />
                     </li>
-                    <li>
+                    <li class="imagine-nav">
                         <img src="./img/work-3.jpg" alt="Дизайн" width="370" height="294" />
                     </li>
                 </ul>
@@ -90,28 +92,28 @@
             <div class="container">
                 <h2 class="section-title">Наша команда</h2>
                 <ul class="team-list" style="display: flex;">
-                    <li class="decor">
+                    <li class="decor rang">
                         <img src="./img/Person-1.jpg" alt="Дизайнер-мужчина в бордовой рубашке" width="270" height="260" />
                         <div class="team-description">
                             <h3 class="title">Игорь Демьяненко</h3>
                             <p class="paragraph">Product Designer</p>
                         </div>
                     </li>
-                    <li class="decor">
+                    <li class="decor rang">
                         <img src="./img/Person-2.jpg" alt="Разработчик-девушка" width="270" height="260" />
                         <div class="team-description">
                             <h3 class="title">Ольга Репина</h3>
                             <p class="paragraph">Frontend Developer</p>
                         </div>
                     </li>
-                    <li class="decor">
+                    <li class="decor rang">
                         <img src="./img/Person-3.jpg" alt="Маркетолог-мужчина в белой рубашке" width="270" height="260" />
                         <div class="team-description">
                             <h3 class="title">Николай Тарасов</h3>
                             <p class="paragraph">Marketing</p>
                         </div>
                     </li>
-                    <li class="decor">
+                    <li class="decor rang">
                         <img src="./img/Person-4.jpg" alt="Дизайнер-мужчина в черной футболке" width="270" height="260" />
                         <div class="team-description">
                             <h3 class="title">Михаил Ермаков</h3>
@@ -124,7 +126,7 @@
     </main>
     <!--footer section-->
     <footer class="footer">
-    <div class="container">
+    <div class="container container-footer">
         <a href="./index.html" class="footer-logo">
             <span class="logo-color">Web</span>Studio</a>
         <address class="adress list">
