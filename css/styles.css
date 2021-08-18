@@ -12,9 +12,6 @@
   --primery-font: "Roboto", sans-serif;
   --secondary-font: "Raleway", sans-serif;
 }
-/* section 1. &Footer. Accent background-color: #2F303A; */
-/* section 2, 3. Main background-color: #E5E5E5 */
-
 body {
   color: var(--primary-text-color);
   background-color: var(--primery-background-color);
@@ -23,18 +20,18 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
-
 h1,
 h2,
 h3,
 ul,
+p,
 a {
   list-style: none;
   text-decoration: none;
   padding: 0;
   margin: 0;
+  cursor: default;
 }
-
 .container {
   width: 1200px;
   padding-right: 15px;
@@ -42,13 +39,11 @@ a {
   margin-right: auto;
   margin-left: auto;
 }
-
 .section {
   background-color: var(--primery-background-color);
   padding-top: 94px;
   padding-bottom: 94px;
 }
-
 h2 {
   color: var(--primary-text-color);
   font-family: var(--primery-font);
@@ -60,7 +55,6 @@ h2 {
   letter-spacing: 0.03em;
   padding-top: 0;
 }
-
 .section-title {
   padding-top: 94px;
   margin-bottom: 50px;
@@ -93,12 +87,10 @@ img {
 }
 
 /* top line Navigation */
-
 header {
   height: 80px;
   display: flex;
 }
-
 .site-nav-list {
   color: var(--primary-text-color);
   width: 49px;
@@ -118,12 +110,18 @@ header {
 .site-nav-list {
   display: flex;
   justify-content: flex-start;
-  margin-left: auto;
+  margin-right: auto;
 }
 .site-nav-link {
   display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+.site-nav-link:visited {
+  color: var(--primary-text-color);
+}
+.link-current {
+  cursor: pointer;
 }
 .link-current:hover,
 .link-current:focus {
@@ -133,23 +131,21 @@ header {
 .contacts .li {
   font-weight: 500px;
   display: flex;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  margin-top: 32px;
+  margin-bottom: 32px;
   justify-content: flex-end;
   margin-left: 331px;
 }
-
 .site-nav-contacts:not(:last-child) {
   margin-right: 50px;
 }
-.contacts .contacts-link {
+.contacts-link {
+  color: var(--secondary-text-color);
+  cursor: pointer;
+}
+.contacts-tel {
   color: var(--secondary-text-color);
 }
-.contacts .contacts-tel {
-  color: var(--secondary-text-color);
-  margin-right: 15px;
-}
-
 .contacts-link:hover,
 .contacts-link:focus {
   color: var(--accent-color);
@@ -160,8 +156,8 @@ header {
 .hero {
   background-color: var(--accent-background-color);
   text-align: center;
-  top: 80px;
   padding-top: 200px;
+  padding-right: 452px;
 }
 .hero-title {
   color: var(--second-accent-color);
@@ -173,13 +169,12 @@ header {
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 30px;
-}
-.hero-title {
   display: block;
   text-align: center;
 }
 h1 {
   width: 696px;
+  height: 120px;
   margin-right: 452px;
   margin-left: 452px;
 }
@@ -206,7 +201,7 @@ h1 {
   height: 50px;
   margin-right: 700px;
   margin-left: 700px;
-  margin-bottom: 294px;
+  margin-bottom: 200px;
 }
 .button-service {
   display: inline-block;
@@ -221,9 +216,6 @@ h1 {
 .features {
   padding-top: 0;
   padding-bottom: 0;
-}
-.qualities {
-  margin-top: 0;
 }
 .feature-list {
   display: flex;
@@ -264,10 +256,13 @@ h1 {
 }
 .team-list {
   display: flex;
-  margin-top: 50px;
 }
-.rang:not(:last-child) {
+.team-list:not(:last-child) {
   margin-right: 30px;
+}
+.team-description {
+  text-align: center;
+  padding: 30px 0px;
 }
 .team-list .title {
   color: var(--primary-text-color);
@@ -278,7 +273,6 @@ h1 {
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-bottom: 10px;
 }
 .team-list .paragraph {
   color: var(--secondary-text-color);
@@ -288,19 +282,17 @@ h1 {
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-top: 10px;
 }
 .team-list .decor {
   background-color: var(--second-accent-color);
   width: 270px;
+  height: 368px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   display: block;
   margin-top: 0;
-}
-.team-description {
-  text-align: center;
-  padding: 30px 0px;
 }
 
 /* footer */
@@ -324,6 +316,7 @@ h1 {
 .container-footer {
   padding-top: 60px;
   padding-bottom: 60px;
+  padding-left: 15px;
 }
 
 address {
@@ -336,6 +329,7 @@ address {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  padding: 0;
 }
 .residence {
   color: var(--second-accent-color);
@@ -344,10 +338,12 @@ address {
 .data {
   color: rgba(255, 255, 255, 0.6);
   margin-top: 9px;
+  padding: 0;
 }
-.data .tel {
+.tel {
   color: rgba(255, 255, 255, 0.6);
   margin-top: 9px;
+  padding: 0;
 }
 /* Стили для portfolio.html */
 /* button section */
@@ -356,9 +352,8 @@ address {
   display: flex;
   justify-content: center;
   margin-top: 0;
-  margin-bottom: 34px;
+  margin-bottom: 50px;
 }
-
 .filter-nav:not(:last-child) {
   margin-right: 8px;
 }
@@ -374,6 +369,8 @@ address {
   border-radius: 4px;
   padding: 6px 22px;
   border: transparent;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .button-primery:hover,
 .button-primery:focus {
@@ -395,33 +392,32 @@ address {
 /* projects-list */
 .projects-list {
   background-color: var(--second-accent-color);
-  margin: 34px 30px 30px 30px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 .projects-list {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -30px;
-  margin-top: -30px;
+  margin: -15px;
 }
-.decor {
-  margin-top: 30px;
-  margin-left: 30px;
+.projects-list li {
+  margin: 15px;
 }
-.projects-list .title {
+
+.projects-title {
   color: var(--primary-text-color);
   font-family: var(--primery-font);
-  font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   margin-top: 20px;
   margin-left: 24px;
 }
-.projects-list .paragraph {
+.projects-paragraph {
   color: var(--secondary-text-color);
-  font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
@@ -429,9 +425,10 @@ address {
   margin-left: 24px;
   margin-bottom: 20px;
 }
-
-.projects-list .decor {
+.decor {
   background-color: var(--primery-background-color);
   border: 1px solid #eeeeee;
   box-sizing: border-box;
+  width: 370px;
+  height: 404px;
 }
