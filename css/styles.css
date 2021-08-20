@@ -57,7 +57,7 @@ h2 {
 }
 .section-title {
   padding-top: 94px;
-  margin-bottom: 50px;
+  padding-bottom: 50px;
 }
 img {
   width: 100%;
@@ -89,6 +89,7 @@ img {
 header {
   height: 80px;
   display: flex;
+  border: 1px solid #ececec;
 }
 .container-flex {
   display: flex;
@@ -400,9 +401,6 @@ address {
 /* projects-list */
 .projects-list {
   background-color: var(--second-accent-color);
-  list-style: none;
-  padding: 0;
-  margin: 0;
 }
 .projects-list {
   display: flex;
@@ -412,7 +410,10 @@ address {
 .projects-list li {
   margin: 15px;
 }
-
+.decor-border {
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+}
 .projects-title {
   color: var(--primary-text-color);
   font-family: var(--primery-font);
@@ -435,8 +436,6 @@ address {
 }
 .decor {
   background-color: var(--primery-background-color);
-  border: 1px solid #eeeeee;
-  box-sizing: border-box;
   width: 370px;
   height: 404px;
 }
