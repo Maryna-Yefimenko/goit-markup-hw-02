@@ -8,6 +8,7 @@
   --secondary-background-color: #ececec;
   --accent-background-color: #2f303a;
   --grey-background-color: #f5f4fa;
+  --blue-background-color: #2196f3;
 
   --primery-font: "Roboto", sans-serif;
   --secondary-font: "Raleway", sans-serif;
@@ -41,6 +42,7 @@ a {
 }
 .section {
   background-color: var(--primery-background-color);
+  font-style: normal;
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -53,11 +55,10 @@ h2 {
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
-  padding-top: 0;
 }
-.section-title {
-  padding-top: 94px;
-  padding-bottom: 50px;
+.link,
+.list {
+  text-decoration: none;
 }
 img {
   width: 100%;
@@ -68,10 +69,8 @@ img {
 /* top line */
 .logo {
   color: #000000;
-  text-decoration: none;
-  width: 145px;
-  height: 31px;
   font-family: var(--secondary-font);
+  font-style: normal;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -80,47 +79,17 @@ img {
 .logo-color {
   color: var(--accent-color);
 }
-.logo {
-  margin-top: 24px;
-  margin-bottom: 25px;
-}
 
 /* top line Navigation */
-header {
-  height: 80px;
-  display: flex;
-  border: 1px solid #ececec;
-}
-.container-flex {
-  display: flex;
-  align-items: center;
-}
-.nav {
-  display: flex;
-  align-items: center;
-}
+
 .site-nav-list {
   color: var(--primary-text-color);
-  width: 49px;
   font-family: var(--primery-font);
+  font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.17;
+  line-height: 1.14;
   letter-spacing: 0.02em;
-}
-.site-nav-list {
-  display: flex;
-  justify-content: flex-start;
-  margin-right: auto;
-  margin-left: 93px;
-}
-.site-nav-top:not(:last-child) {
-  margin-right: 50px;
-}
-.site-nav-link {
-  display: block;
-  margin-top: 32px;
-  margin-bottom: 32px;
 }
 .site-nav-link:visited {
   color: var(--primary-text-color);
@@ -132,240 +101,134 @@ header {
 .link-current:focus {
   color: var(--accent-color);
 }
-
-.contacts {
-  font-weight: 500px;
-  display: flex;
-  margin-top: 32px;
-  margin-bottom: 32px;
-  justify-content: flex-end;
-  margin-left: 331px;
-}
-.site-nav-contacts:not(:last-child) {
-  margin-right: 50px;
-}
 .contacts-link {
   color: var(--secondary-text-color);
   cursor: pointer;
-}
-.contacts-tel {
-  color: var(--secondary-text-color);
-  margin-left: 50px;
 }
 .contacts-link:hover,
 .contacts-link:focus {
   color: var(--accent-color);
 }
-
+.contacts-tel {
+  color: var(--secondary-text-color);
+}
 /* Стили для index.html */
 /* section one. hero */
 .hero {
   background-color: var(--accent-background-color);
-  text-align: center;
-  padding-top: 200px;
-  padding-right: 452px;
 }
 .hero-title {
   color: var(--second-accent-color);
   font-family: var(--primery-font);
   font-weight: 900;
   font-size: 44px;
-  letter-spacing: 0.06em;
   line-height: 1.36;
+  letter-spacing: 0.06em;
   text-align: center;
   text-transform: uppercase;
-  margin-bottom: 30px;
-  display: block;
-  text-align: center;
 }
-h1 {
-  width: 696px;
-  height: 120px;
-  margin-right: 452px;
-  margin-left: 452px;
-}
-.container-hero-title {
-  display: block;
-  text-align: center;
-}
+
 /* button */
 .button-service {
   color: var(--second-accent-color);
-  background-color: var(--accent-color);
+  background-color: var(--blue-background-color);
   font-family: var(--primery-font);
-  font-style: bold;
+  font-style: 700;
   font-size: 16px;
   line-height: 1.87;
-  text-align: center;
   letter-spacing: 0.06em;
-}
-.button-service {
+  align-items: center;
+  text-align: center;
   border-radius: 4px;
   border: transparent;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  width: 200px;
-  height: 50px;
-  margin-right: 700px;
-  margin-left: 700px;
-  margin-bottom: 200px;
-}
-.button-service {
-  display: inline-block;
-  text-align: center;
 }
 .button-service:hover,
 .button-service:focus {
   background-color: #188ce8;
 }
 
-/* section two. features */
-.features {
-  padding-top: 0;
-  padding-bottom: 0;
-}
-.feature-list {
-  display: flex;
-  justify-content: center;
-}
-.feature-nav:not(:last-child) {
-  margin-right: 30px;
-}
+/* section two. list of features */
 .feature-list .title {
   color: var(--primary-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
   text-transform: uppercase;
 }
 .feature-list .paragraph {
   color: var(--secondary-text-color);
-}
-.paragraph:not(:last-child) {
-  margin-right: 30px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
 }
 
 /* section three */
-.technologies {
-  padding-top: 0;
-}
 .imagine-position {
-  width: 1170px;
   height: auto;
-  display: flex;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-.imagine-nav:not(:last-child) {
-  margin-right: 30px;
+  mix-blend-mode: normal;
 }
 
 /* section four. our team */
 .team-background {
   background-color: var(--grey-background-color);
-  padding-top: 0;
-}
-.team-list {
-  display: flex;
-}
-.team-list li:not(:last-child) {
-  margin-right: 30px;
-}
-.team-description {
-  text-align: center;
-  padding: 30px 0px;
 }
 .team-list .title {
   color: var(--primary-text-color);
   font-family: var(--primery-font);
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
-  letter-spacing: 0.03em;
 }
 .team-list .paragraph {
   color: var(--secondary-text-color);
-  font-style: normal;
+  font-family: var(--primery-font);
   font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
-  letter-spacing: 0.03em;
-  margin-top: 10px;
 }
 .team-list .decoration {
   background-color: var(--second-accent-color);
-  width: 270px;
-  height: 368px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  display: block;
-  margin-top: 0;
 }
 
 /* footer */
 .footer {
   background-color: var(--accent-background-color);
-  width: 1600px;
-  height: 252px;
-  padding: 60px 0px;
 }
 
 .footer-logo {
   color: var(--second-accent-color);
-  width: 145px;
-  height: 31px;
   font-family: var(--secondary-font);
-  font-style: normal;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  text-decoration: none;
 }
 
-.footer .cont {
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-address {
-  font-style: normal;
-}
-.adress .list {
-  width: 231px;
-  height: 21px;
+.adress-list {
   font-family: var(--primery-font);
-  font-weight: normal;
+  font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  padding: 0;
 }
 .residence {
   color: var(--second-accent-color);
-  margin-top: 20px;
 }
 .data {
   color: rgba(255, 255, 255, 0.6);
-  margin-top: 9px;
-  margin-bottom: 9px;
-  padding: 0;
 }
 
 /* Стили для portfolio.html */
 /* button section */
 .filter {
   background-color: var(--second-accent-color);
-  display: flex;
-  justify-content: center;
-  margin-top: 0;
-  margin-bottom: 50px;
 }
-.filter-nav:not(:last-child) {
-  margin-right: 8px;
-}
+
 .button-primery {
   color: var(--second-accent-color);
   background-color: var(--accent-color);
@@ -376,7 +239,6 @@ address {
   letter-spacing: 0.03em;
   cursor: pointer;
   border-radius: 4px;
-  padding: 6px 22px;
   border: transparent;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -395,25 +257,13 @@ address {
   letter-spacing: 0.03em;
   cursor: default;
   border-radius: 4px;
-  padding: 6px 22px;
   border: transparent;
 }
 /* projects-list */
 .projects-list {
   background-color: var(--second-accent-color);
 }
-.projects-list {
-  display: flex;
-  flex-wrap: wrap;
-  margin: -15px;
-}
-.projects-list li {
-  margin: 15px;
-}
-.decor-border {
-  border: 1px solid #eeeeee;
-  box-sizing: border-box;
-}
+
 .projects-title {
   color: var(--primary-text-color);
   font-family: var(--primery-font);
@@ -421,8 +271,6 @@ address {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  margin-top: 20px;
-  margin-left: 24px;
 }
 .projects-paragraph {
   color: var(--secondary-text-color);
@@ -430,12 +278,7 @@ address {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
-  margin-top: 4px;
-  margin-left: 24px;
-  margin-bottom: 20px;
 }
 .decor {
   background-color: var(--primery-background-color);
-  width: 370px;
-  height: 404px;
 }
