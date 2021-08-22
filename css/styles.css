@@ -226,17 +226,16 @@ img {
 /* Стили для portfolio.html */
 /* button section */
 .filter {
-  background-color: var(--second-accent-color);
-}
-
-.button-primery {
-  color: var(--second-accent-color);
-  background-color: var(--accent-color);
+  font-family: var(--primery-font);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
+}
+.button-primery {
+  color: var(--second-accent-color);
+  background-color: var(--blue-background-color);
   cursor: pointer;
   border-radius: 4px;
   border: transparent;
@@ -250,11 +249,6 @@ img {
 .button-secondary {
   color: var(--primary-text-color);
   background-color: var(--grey-background-color);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  text-align: center;
-  letter-spacing: 0.03em;
   cursor: default;
   border-radius: 4px;
   border: transparent;
