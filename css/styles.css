@@ -254,8 +254,10 @@ img {
   border: transparent;
 }
 /* projects-list */
-.projects-list {
-  background-color: var(--second-accent-color);
+.decor {
+  background-color: var(--primery-background-color);
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
 }
 
 .projects-title {
@@ -272,7 +274,4 @@ img {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
-}
-.decor {
-  background-color: var(--primery-background-color);
 }
