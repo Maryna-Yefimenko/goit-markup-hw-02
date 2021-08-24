@@ -8,17 +8,17 @@
     <!-- Нормализатор -->
     <link rel="stylesheet" 
     href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
+    <!-- Шрифты -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
     <!-- Стили -->
     <link rel="stylesheet" href="./css/styles.css">
-    <!-- Шрифты -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <!--body and header section-->
 <body>
     <header>
         <!-- top line -->
-        <div class="container">
+        <div>
             <nav>
                 <a href="./index.html" class="logo"><span class="logo-color">Web</span>Studio</a>
                 <ul class="site-nav-list">
@@ -26,7 +26,7 @@
                     <li><a href="./portfolio.html" class="site-nav-link link">Портфолио</a></li>
                     <li><a href="" class="site-nav-link link">Контакты</a></li>
                     <li class="site-nav-contacts"><a href="mailto:info@devstudio.com" class="contacts-link">info@devstudio.com</a></li>
-                    <li class="site-nav-contacts"><a href="tel:+380961111111" class="contacts-tel">+38 096 111 11 11</a></li>
+                    <li class="site-nav-contacts"><a href="tel:+380961111111" class="contacts-link">+38 096 111 11 11</a></li>
                 </ul>
             </nav>
         </div> 
@@ -36,14 +36,14 @@
     <main>
         <!--section one. Hero. effective decissions-->
         <section class="hero">
-            <div class="container">
+            <div>
                 <h1 class="hero-title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА</h1>
-            <button type="button" class="button-service">Заказать услугу</button>
+            <button type="button" class="button button-service">Заказать услугу</button>
             </div>
         </section>
         <!--section two. list of features-->
         <section class="section">
-            <div class="container">
+            <div>
                 <h2></h2>
                 <ul class="feature-list">
                     <li>
@@ -67,8 +67,8 @@
         </section>
         <!--section three. what we do-->
         <section class="section">
-            <div class="container">
-                <h2>Чем мы занимаемся</h2>
+            <div>
+                <h2 class="section-title">Чем мы занимаемся</h2>
                 <ul class="imagine-position">
                     <li>
                         <img src="./img/work-1.jpg" alt="Компьютерные технологии" 
@@ -90,8 +90,8 @@
         </section>
         <!--section four. our team-->
         <section class="section team-background">
-            <div class="container">
-                <h2>Наша команда</h2>
+            <div>
+                <h2 class="section-title">Наша команда</h2>
                 <ul class="team-list">
                     <li class="decoration">
                         <img src="./img/Person-1.jpg" alt="Дизайнер-мужчина в бордовой рубашке" 
@@ -127,14 +127,14 @@
     </main>
     <!--footer section-->
     <footer class="footer">
-        <div class="container">
+        <div>
             <a href="./index.html" class="footer-logo">
                 <span class="logo-color">Web</span>Studio</a>
             <address class="adress-list">
                 <ul>
                     <li><p class="residence">г. Киев, пр-т Леси Украинки, 26</p></li>
-                    <li><a class="data" href="mailto:info@example.com">info@example.com</a></li>
-                    <li><a class="data" href="tel:+380991111111">+38 099 111 11 11</a></li>
+                    <li class="data"><a class="contacts-link" href="mailto:info@example.com">info@example.com</a></li>
+                    <li class="data"><a class="contacts-link" href="tel:+380991111111">+38 099 111 11 11</a></li>
                 </ul>
             </address>
         </div>
