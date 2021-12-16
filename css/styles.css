@@ -107,6 +107,9 @@ a {
 }
 
 /* section two. list of features */
+h2[hidden] {
+  display: none;
+}
 .feature-title {
   font-weight: 700;
   font-size: 14px;
