@@ -38,6 +38,9 @@ a {
   text-decoration: none;
 }
 
+.hidden-title {
+  display: none;
+}
 /* top line */
 .logo {
   color: var(--black-text-color);
@@ -107,9 +110,6 @@ a {
 }
 
 /* section two. list of features */
-h2[hidden] {
-  display: none;
-}
 .feature-title {
   font-weight: 700;
   font-size: 14px;
